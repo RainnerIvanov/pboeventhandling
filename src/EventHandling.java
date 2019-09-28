@@ -36,7 +36,8 @@ public class EventHandling extends JFrame {
         frame.setLayout(null);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
-
+         
+        //JenisKelamin
         frame.add(kl);
         kl.setBounds(50, 40, 200, 20);
         frame.add(lk);
@@ -48,6 +49,7 @@ public class EventHandling extends JFrame {
         frame.add(kelamin);
         kelamin.setBounds(300, 70, 150, 20);
         kelamin.setEditable(false);
+        //ActionListener JenisKelamin
         lk.addItemListener((ItemEvent event) -> {
             if (event.getSource() == lk) {
                 if (event.getStateChange() == ItemEvent.SELECTED) {
@@ -63,6 +65,7 @@ public class EventHandling extends JFrame {
                 }
             }
         });
+        //Agama
         frame.add(agm);
         agm.setBounds(50, 120, 200, 20);
         frame.add(nagm);
@@ -70,6 +73,7 @@ public class EventHandling extends JFrame {
         frame.add(agama);
         agama.setBounds(300, 150, 150, 20);
         agama.setEditable(false);
+        //ActionListener Agama
         nagm.addItemListener((ItemEvent e) -> {
             if (e.getStateChange() == ItemEvent.SELECTED) {
                 if (nagm.getSelectedIndex() == 0) {
@@ -87,6 +91,7 @@ public class EventHandling extends JFrame {
                 }
             }
         });
+        //Hobi
         frame.add(hbi);
         hbi.setBounds(50, 200, 200, 20);
         frame.add(sepak);
@@ -98,6 +103,7 @@ public class EventHandling extends JFrame {
         hobi.setEditable(false);
         btc.add(sepak);
         btc.add(basket);
+        //ActionListener Hobi
         sepak.addItemListener((ItemEvent event) -> {
             if (event.getSource() == sepak) {
                 if (event.getStateChange() == ItemEvent.SELECTED) {
@@ -113,6 +119,7 @@ public class EventHandling extends JFrame {
                 }
             }
         });
+        //MouseListener
         frame.add(tes);
         tes.setBounds(25, 350, 150, 20);
         tes.setEditable(false);
